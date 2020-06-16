@@ -45,7 +45,7 @@ export default class VirtualComponent {
     let top = Infinity;
     let bottom = -Infinity;
 
-    while (upperBound !== lowerBound) {
+    while (upperBound && upperBound !== lowerBound) {
       upperBound = upperBound.nextSibling;
 
       if (upperBound instanceof Element) {
